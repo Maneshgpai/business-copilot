@@ -1,0 +1,38 @@
+
+
+Aim:
+Let's create an agent for ASIET
+
+Agentic workflow to handle different functions including computer access (claude)
+Can handle followup questions (WIP)
+Run on prem
+Works on chat or realtime talk
+
+Documentation on Haystack
+https://docs.haystack.deepset.ai/docs/intro
+
+Tutorial using Haystack
+https://haystack.deepset.ai/tutorials/27_first_rag_pipeline
+
+
+load_data.py:
+This is invoked when you want to load the business information. Only invoked once.
+The code is present in rag.py. Use the appropriate part and and use it to load PDF and Webpages
+Load PDFs and webpages about business by fetch, pre-process, index and loading the embeddings to a document database 
+    Preprocess PDF in MVP:
+        https://haystack.deepset.ai/tutorials/30_file_type_preprocessing_index_pipeline
+    Use Chroma as DocumentStore:
+        https://haystack.deepset.ai/integrations/chroma-documentstore
+    Use NvidiaDocumentEmbedder as Document Embedder:
+        https://docs.haystack.deepset.ai/docs/embedders
+
+retrieve.py
+    Chat with data form the document store
+        https://haystack.deepset.ai/tutorials/33_hybrid_retrieval
+    Talk
+
+main.py
+    Understands what is needed to be done and calls appropriate function: IG post or question about the business or services sold or phone nbr or contact details of someone etc
+    Creates a prompt appropriate for the query
+    Calls retrieve.py to get context based on the query
+    Call function either skills/ig.py or linkedin.py or websearch.py

@@ -1,12 +1,14 @@
 
 
 Aim:
-Agent for ASIET - can create IG posts/reels, Blog content, Answer Q&A
+Agent for ASIET - can Answer Q&A, create IG posts/reels/website content, raise a support ticket, email support staff about query etc
 
-Agentic workflow to handle different functions including computer access (claude)
-Can handle followup questions (WIP)
-Run on prem
+Features:
 Works on chat or realtime talk
+Can use any LLM - properitery or on-prem llm
+Can handle followup questions - sing prompt caching per session (https://github.com/deepset-ai/haystack-core-integrations/blob/main/integrations/anthropic/example/prompt_caching.py)
+Agentic workflow to handle different functions including computer access (claude)
+Runs on-prem machines or private cloud
 
 Documentation on Haystack
 https://docs.haystack.deepset.ai/docs/intro

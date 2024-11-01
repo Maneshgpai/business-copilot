@@ -3,3 +3,4 @@ anthropic-haystack
 python-dotenv
 trafilatura #RAG for website
 lxml_html_clean #RAG for website
+chroma-haystack ## Chroma document store

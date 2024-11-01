@@ -1,0 +1,45 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting datasets
+  Downloading datasets-3.1.0-py3-none-any.whl.metadata (20 kB)
+Requirement already satisfied: filelock in /home/manesh/.local/lib/python3.10/site-packages (from datasets) (3.15.4)
+Requirement already satisfied: numpy>=1.17 in /home/manesh/.local/lib/python3.10/site-packages (from datasets) (1.26.4)
+Requirement already satisfied: pyarrow>=15.0.0 in /usr/local/lib/python3.10/dist-packages (from datasets) (16.1.0)
+Collecting dill<0.3.9,>=0.3.0 (from datasets)
+  Downloading dill-0.3.8-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: pandas in /usr/local/lib/python3.10/dist-packages (from datasets) (2.2.2)
+Requirement already satisfied: requests>=2.32.2 in /usr/local/lib/python3.10/dist-packages (from datasets) (2.32.3)
+Requirement already satisfied: tqdm>=4.66.3 in /usr/local/lib/python3.10/dist-packages (from datasets) (4.66.4)
+Collecting xxhash (from datasets)
+  Downloading xxhash-3.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (12 kB)
+Collecting multiprocess<0.70.17 (from datasets)
+  Downloading multiprocess-0.70.16-py310-none-any.whl.metadata (7.2 kB)
+Requirement already satisfied: fsspec<=2024.9.0,>=2023.1.0 in /home/manesh/.local/lib/python3.10/site-packages (from fsspec[http]<=2024.9.0,>=2023.1.0->datasets) (2024.6.1)
+Requirement already satisfied: aiohttp in /home/manesh/.local/lib/python3.10/site-packages (from datasets) (3.9.5)
+Requirement already satisfied: huggingface-hub>=0.23.0 in /home/manesh/.local/lib/python3.10/site-packages (from datasets) (0.23.5)
+Requirement already satisfied: packaging in /home/manesh/.local/lib/python3.10/site-packages (from datasets) (24.1)
+Requirement already satisfied: pyyaml>=5.1 in /home/manesh/.local/lib/python3.10/site-packages (from datasets) (6.0.1)
+Requirement already satisfied: aiosignal>=1.1.2 in /usr/lib/python3/dist-packages (from aiohttp->datasets) (1.2.0)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (23.2.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/lib/python3/dist-packages (from aiohttp->datasets) (1.2.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/lib/python3/dist-packages (from aiohttp->datasets) (5.1.0)
+Requirement already satisfied: yarl<2.0,>=1.0 in /usr/lib/python3/dist-packages (from aiohttp->datasets) (1.7.2)
+Requirement already satisfied: async-timeout<5.0,>=4.0 in /home/manesh/.local/lib/python3.10/site-packages (from aiohttp->datasets) (4.0.3)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub>=0.23.0->datasets) (4.12.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/manesh/.local/lib/python3.10/site-packages (from requests>=2.32.2->datasets) (3.4.0)
+Requirement already satisfied: idna<4,>=2.5 in /home/manesh/.local/lib/python3.10/site-packages (from requests>=2.32.2->datasets) (2.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/lib/python3/dist-packages (from requests>=2.32.2->datasets) (1.26.5)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests>=2.32.2->datasets) (2020.6.20)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.10/dist-packages (from pandas->datasets) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /home/manesh/.local/lib/python3.10/site-packages (from pandas->datasets) (2024.1)
+Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.10/dist-packages (from pandas->datasets) (2024.1)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.8.2->pandas->datasets) (1.16.0)
+Downloading datasets-3.1.0-py3-none-any.whl (480 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 480.6/480.6 kB 2.1 MB/s eta 0:00:00
+Downloading dill-0.3.8-py3-none-any.whl (116 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 116.3/116.3 kB 1.1 MB/s eta 0:00:00
+Downloading multiprocess-0.70.16-py310-none-any.whl (134 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.8/134.8 kB 1.1 MB/s eta 0:00:00
+Downloading xxhash-3.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (194 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 194.1/194.1 kB 1.4 MB/s eta 0:00:00
+Installing collected packages: xxhash, dill, multiprocess, datasets
+Successfully installed datasets-3.1.0 dill-0.3.8 multiprocess-0.70.16 xxhash-3.5.0

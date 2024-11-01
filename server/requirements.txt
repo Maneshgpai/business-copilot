@@ -1,6 +1,15 @@
 haystack-ai
+# farm-haystack
 anthropic-haystack
 python-dotenv
 trafilatura #RAG for website
 lxml_html_clean #RAG for website
-chroma-haystack ## Chroma document store
+# chroma-haystack ## Chroma document store
+datasets>=2.6.1
+sentence-transformers>=3.0.0
+# huggingface_hub>=0.23.0
+markdown-it-py
+mdit_plain
+pypdf
+gdown
+nvidia-haystack

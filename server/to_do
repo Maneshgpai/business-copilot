@@ -1,12 +1,10 @@
-
-
 Aim:
 Agent for ASIET - can Answer Q&A, create IG posts/reels/website content, raise a support ticket, email support staff about query etc
 
 Features:
 Works on chat or realtime talk
 Can use any LLM - properitery or on-prem llm
-Can handle followup questions - sing prompt caching per session (https://github.com/deepset-ai/haystack-core-integrations/blob/main/integrations/anthropic/example/prompt_caching.py)
+Can handle followup questions / previous asked question in same context - sing prompt caching per session (https://github.com/deepset-ai/haystack-core-integrations/blob/main/integrations/anthropic/example/prompt_caching.py)
 Agentic workflow to handle different functions including computer access (claude)
 Runs on-prem machines or private cloud
 
@@ -17,7 +15,7 @@ Tutorial using Haystack
 https://haystack.deepset.ai/tutorials/27_first_rag_pipeline
 
 
-load_data.py:
+load.py:
 This is invoked when you want to load the business information. Only invoked once.
 The code is present in rag.py. Use the appropriate part and and use it to load PDF and Webpages
 Load PDFs and webpages about business by fetch, pre-process, index and loading the embeddings to a document database 
@@ -38,3 +36,8 @@ main.py
     Creates a prompt appropriate for the query
     Calls retrieve.py to get context based on the query
     Call function either skills/ig.py or linkedin.py or websearch.py
+
+
+Future future features:
+Locally running Docker image of Agentic RAG using Langraph: https://github.com/NVIDIA/GenerativeAIExamples/blob/main/RAG/notebooks/langchain/agentic_rag_with_nemo_retriever_nim.ipynb
+More agent demos: https://langchain-ai.github.io/langgraph/tutorials/#quick-start

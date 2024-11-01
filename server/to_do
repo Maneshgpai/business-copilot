@@ -1,7 +1,7 @@
 
 
 Aim:
-Let's create an agent for ASIET
+Agent for ASIET - can create IG posts/reels, Blog content, Answer Q&A
 
 Agentic workflow to handle different functions including computer access (claude)
 Can handle followup questions (WIP)
